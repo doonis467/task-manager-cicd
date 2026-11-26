@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Check Java Version') {
             steps {
-                bat 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Check-Toolchain.ps1 -RequiredJava 21 -JavaOnly'
+                bat 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Check-Toolchain.ps1 -RequiredJava 17 -JavaOnly'
             }
         }
         stage('Toolchain') {
