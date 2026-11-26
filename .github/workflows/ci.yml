@@ -11,7 +11,7 @@ concurrency:
   group: java-ci-${{ github.ref }}
   cancel-in-progress: true
 env:
-  REQUIRED_JAVA: '21'
+  REQUIRED_JAVA: '17'
   REQUIRED_MAVEN: '3.10.0'
 jobs:
   check-toolchain:
